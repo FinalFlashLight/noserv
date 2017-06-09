@@ -1,0 +1,10 @@
+.meowbody {
+  margin-left: 10%;
+
+}
+.cat {
+  max-height: 800px;
+  max-width: 1211px;
+  min-width: 500px;
+  min-height: 400px;
+}

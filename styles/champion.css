@@ -1,0 +1,37 @@
+.champbody {
+min-height: 200px;
+background-color: #5d5d5d;
+color: #F0F0F0;
+width: 100%;
+padding-left: 10%;
+}
+
+.headpic {
+  border-radius: 25px;
+  border: 1px solid gold;
+}
+.skinName {
+
+}
+
+
+/*info box*/
+.info {
+padding:10px;
+background-color: #323232;
+border: 3px solid blue;
+width: 100px;
+}
+
+.attack {
+  color: red;
+}
+.magic {
+  color: purple;
+}
+.defense {
+  color: yellow;
+}
+.difficulty {
+  color: orange;
+}

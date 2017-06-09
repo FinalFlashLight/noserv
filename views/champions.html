@@ -1,0 +1,26 @@
+<link rel='stylesheet' href='styles/champions.css'>
+
+<div class=champsBody>
+<div class='filters'>
+  <!-- dropdown sort by -->
+  <select class="sortBy" ng-model="sort">
+    <option value="name" selected="selected">Name</option>
+    <option value="id">Id</option>
+    <option value="title">Title</option>
+  </select>
+  <!-- search by name -->
+  <input class="search" type="text" placeholder="search champions" ng-model="filter">
+</div>
+<div class="arena">
+  <div ng-repeat="champion in champions | filter: filter | orderBy: sort">
+    <div class="champBlock" ui-sref="champion({id: champion.id})">
+      <div class="imgbox">
+        <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/{{champion.key}}.png">
+      </div>
+      <div class="nameBlock">
+        {{champion.name}}
+      </div>
+    </div>
+  </div>
+</div> <!-- end of arena -->
+</div> <!-- end of champs body -->

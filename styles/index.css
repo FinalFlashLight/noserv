@@ -1,0 +1,38 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  padding: 5px;
+  height: 30px;
+
+}
+
+.logo {
+  margin-left: 5%;
+  height: 150px;
+}
+.logobox {
+  display: inline;
+
+}
+.head {
+  background-color: #323232;
+  width: 100%;
+}
+.navbuttons {
+  width: 25%;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  left: 40%;
+}
+
+.feet {
+  padding-top: 200px;
+  text-align: center;
+  background-color: #323232;
+  color: #F0F0F0;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+.champsbody {
+  background-color: #0D0D0D;
+  padding-bottom: 5px;
+}
+.arena {
+  display: flex;
+  flex-wrap: wrap;
+  /*border: 3px solid blue;*/
+  background-color: #323232;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 5px;
+
+
+}
+.filters {
+  /*border: 3px solid yellow;*/
+  margin-left: 10%;
+
+}
+.search {
+  background-color: #323232;
+  color: #F0F0F0;
+}
+.sortBy {
+  background-color: #323232;
+  color: #F0F0F0;
+}
+.champBlock {
+  padding: 10px;
+  /*border: 3px solid orange;*/
+}
+.imgbox {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+
+}
+
+.nameBlock {
+  text-align: center;
+  /*border: 2px solid red;*/
+  color: yellow;
+
+}
