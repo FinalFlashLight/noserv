@@ -16,22 +16,45 @@ padding-left: 10%;
 
 
 /*info box*/
-.info {
-padding:10px;
-background-color: #323232;
-border: 3px solid blue;
-width: 100px;
-}
+.infobox {
+  margin-top: 5px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  display: inline-block;
 
-.attack {
-  color: red;
 }
-.magic {
-  color: purple;
-}
-.defense {
-  color: yellow;
-}
-.difficulty {
-  color: orange;
-}
+    .info {
+      padding:10px;
+      background-color: #323232;
+      width: 100px;
+      height: 100px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+      .attack {
+        color: red;
+      }
+      .magic {
+        color: purple;
+      }
+      .defense {
+        color: yellow;
+      }
+      .difficulty {
+        color: orange;
+      }
+
+    .infobars {
+
+      background-color: #323232;
+      width: 200px;
+      display: inline-block;
+      height: 120px;
+      border-right: 3px solid gold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
