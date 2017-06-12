@@ -10,12 +10,22 @@ padding-bottom: 20px;
   border-radius: 25px;
   border: 1px solid gold;
 }
+.name {
+
+}
+.title {
+
+}
 .skinName {
+  font-size: 28px;
   color: gold;
   border-top: 3px solid gold;
   position: absolute;
   bottom: 0px;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 260px;
   background-color: #323232;
   text-align: center;
@@ -23,8 +33,8 @@ padding-bottom: 20px;
 .triangle-bottomleft {
 	width: 0;
 	height: 0;
-	border-bottom: 61px solid gold;
-	border-right: 61px solid transparent;
+	border-bottom: 55px solid gold;
+	border-right: 55px solid transparent;
   position: absolute;
   bottom: 0px;
   left: 300px;
@@ -32,13 +42,16 @@ padding-bottom: 20px;
 .triangle2 {
   width: 0;
 	height: 0;
-	border-bottom: 58px solid #323232;
-	border-right: 58px solid transparent;
+	border-bottom: 52px solid #323232;
+	border-right: 52px solid transparent;
   position: absolute;
   bottom: 0px;
   left: 300px;
 }
 
+.infotype {
+  display: flex;
+}
 
 /*info box*/
 .infobox {
@@ -46,6 +59,7 @@ padding-bottom: 20px;
   border: 3px solid gold;
   border-radius: 5px;
   display: inline-block;
+  margin-right: 5px;
 
 }
     .info {
@@ -84,38 +98,74 @@ padding-bottom: 20px;
       justify-content: space-around;
     }
 
-    .lorebox {
-      max-width: 800px;
-      border: 3px solid gold;
-      border-radius: 5px;
-      background-color: #323232;
-    }
-.lore {
-  font-size: 40px;
+.typebox {
+  margin-top: 5px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  padding: 8px;
+  display: inline-block;
+  background-color: #323232;
+
+
 }
+  .type1 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+  }
+  .typeimg {
+    width: 100px;
+  }
+
+
+.lorebox {
+  max-width: 800px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  background-color: #323232;
+  padding: 10px;
+  margin-top: 5px;
+}
+  .lore {
+    font-size: 40px;
+  }
+
 
 .spells {
   background-color: #323232;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 15px;
   max-width: 800px;
   border-radius: 5px;
   border: 3px solid gold;
 }
-
-.spell1 {
-  height: 100px;
-  padding: 10px;
-}
-.spell2 {
-  height: 100px;
-  padding: 10px;
-}
-.spell3 {
-  height: 100px;
-  padding: 10px;
-}
-.spell4 {
-  height: 100px;
-  padding: 10px;
-}
+  .spell {
+    height: 100px;
+    padding: 10px;
+    position: relative;
+  }
+    .spell-name {
+      color: gold;
+      font-size: 20px;
+      position: absolute;
+      left: 130px;
+      top: 10px;
+    }
+    .spell-cd {
+      position: absolute;
+      top: 12px;
+      left: 600px;
+    }
+    .spell-cost {
+      position: absolute;
+      top: 12px;
+      left: 350px;
+      color: #23FCF8;
+    }
+    .spell-desc {
+      position: absolute;
+      top: 33px;
+      left: 130px;
+      margin-right: 30px;
+    }
