@@ -52,7 +52,34 @@ angular.module('league')
       'border': '1px solid gold',
       'width': $scope.champInfo.info.difficulty * 20 + 'px',
       'height': '25px',
-
+    }
+    $scope.spellimg1 = {
+      'background-image': "url('http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/" + $scope.champInfo.spells[0].image.full + "')",
+      'width' : '100px',
+      'height' : '100px',
+      'background-repeat': 'no-repeat',
+      'background-size': 'cover',
+    }
+    $scope.spellimg2 = {
+      'background-image': "url('http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/" + $scope.champInfo.spells[1].image.full + "')",
+      'width' : '100px',
+      'height' : '100px',
+      'background-repeat': 'no-repeat',
+      'background-size': 'cover',
+    }
+    $scope.spellimg3 = {
+      'background-image': "url('http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/" + $scope.champInfo.spells[2].image.full + "')",
+      'width' : '100px',
+      'height' : '100px',
+      'background-repeat': 'no-repeat',
+      'background-size': 'cover',
+    }
+    $scope.spellimg4 = {
+      'background-image': "url('http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/" + $scope.champInfo.spells[3].image.full + "')",
+      'width' : '100px',
+      'height' : '100px',
+      'background-repeat': 'no-repeat',
+      'background-size': 'cover',
     }
     $scope.lore = $sce.trustAsHtml($scope.champInfo.lore);
     $scope.skinName = $scope.champInfo.skins[$scope.random].name;
