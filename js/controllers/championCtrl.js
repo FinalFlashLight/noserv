@@ -1,5 +1,5 @@
 angular.module('league')
-.controller('championCtrl', function($scope, champsService, $stateParams){
+.controller('championCtrl', function($scope, champsService, $stateParams, $sce){
 
   $scope.myStyle = {
     'height': '500px',
@@ -19,6 +19,7 @@ angular.module('league')
     $scope.myStyle = {
       'border-radius': '25px',
       'display': 'block',
+      'position': 'relative',
       'height': '500px',
       'max-width': '1211px',
       'background-image': "url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + $scope.champInfo.key + "_" + $scope.random + ".jpg')"
@@ -53,6 +54,7 @@ angular.module('league')
       'height': '25px',
 
     }
+    $scope.lore = $sce.trustAsHtml($scope.champInfo.lore);
     $scope.skinName = $scope.champInfo.skins[$scope.random].name;
     console.log($scope.skinName);
 

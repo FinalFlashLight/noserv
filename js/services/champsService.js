@@ -2,7 +2,7 @@ angular.module('league')
 .service('champsService', function($http){
 
   this.getChamps = function(){
-    return $http.get('https://euw1.api.riotgames.com/lol/static-data/v3/champions?api_key=RGAPI-ef65facf-e625-4951-8bc6-65a63b8efbfe')
+    return $http.get('https://na1.api.riotgames.com/lol/static-data/v3/champions?api_key=RGAPI-ef65facf-e625-4951-8bc6-65a63b8efbfe')
     .then(function(result){
       //put result data into an array instead of an object
       var arr = [];
@@ -17,6 +17,6 @@ angular.module('league')
   }
 
   this.getChamp = function(id){
-    return $http.get('https://euw1.api.riotgames.com/lol/static-data/v3/champions/'+ id + '?champData=all&api_key=RGAPI-ef65facf-e625-4951-8bc6-65a63b8efbfe');
+    return $http.get('https://na1.api.riotgames.com/lol/static-data/v3/champions/'+ id + '?champData=all&api_key=RGAPI-ef65facf-e625-4951-8bc6-65a63b8efbfe');
   }
 });

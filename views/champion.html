@@ -1,16 +1,18 @@
 <link rel="stylesheet" href="styles/champion.css">
 
 <div class=champbody>
-
+<!-- banner -->
 <div ng-style="myStyle">
   <img class="headpic" src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/{{champInfo.key}}.png">
   <div class="name"> {{champInfo.name}}</div>
   <div class="title"> {{champInfo.title}}</div>
 
   <div class="skinName"> {{skinName}} </div>
-
+  <div class="triangle-bottomleft"></div>
+  <div class="triangle2"></div>
 </div>
-
+<!-- end of banner-->
+<!-- infobox -->
 <div class="infobox">
   <div class="info">
     <div class="attack">Attack      {{champInfo.info.attack}}</div>
@@ -25,8 +27,11 @@
     <div class="difficultybar" ng-style='difficultybar'></div>
   </div>
 </div>
-<div>
-  hi
+<!-- end of infobox -->
+<div class="lorebox">
+  <div class="lore">Lore</div>
+  <p ng-bind-html="lore"></p>
 </div>
+
 
 </div>
