@@ -29,3 +29,14 @@ mod.config(function ($stateProvider, $urlRouterProvider){
       .otherwise('/home');
 
 });
+
+
+mod.directive('navDirect', function(){
+  return {
+    templateUrl: 'nav.html',
+  };
+});
+
+mod.controller('controllerjustforthisdirective', function($scope){
+  //this is only here because its needed for the directive to work, i think??
+});

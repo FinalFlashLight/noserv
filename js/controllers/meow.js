@@ -1,6 +1,6 @@
 angular.module('league')
 .controller('meowCtrl', function($scope, meowSrv){
-  $scope.test = 'test mew';
+
   $scope.getNewCat = function(){
     $scope.cat = "img/galshir-spinner.gif";
     var promise = meowSrv.getCat();
